@@ -1,0 +1,15 @@
+/**
+* Recipe com.zetapush.tuto.upload
+* Created on Fri May 19 14:25:05 CEST 2017 by damien
+* Documentation in a source comment for a simple description
+*/
+recipe com.zetapush.tuto.upload 1.0.0;
+
+import recipe com.zetapush.core.file 2.0.0 in apiFile;
+
+/** a simple authentication service */
+service auth = simple(__default);
+
+/** our code is run by this service */
+service code = macro(__default) for 'src';
+

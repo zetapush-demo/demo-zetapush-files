@@ -1,0 +1,6 @@
+// create a test user, to be able to run/debug macros from the eclipse UI
+auth.memauth_createUser({
+    login:'user',
+    password:'password',
+    email:'user@zetapush.com'
+});
